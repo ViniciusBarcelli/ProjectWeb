@@ -161,6 +161,33 @@ table, th, td {
   padding: 10px 80px;
 }
 
+#favorite1 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 2%;
+}
+#favorite2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 2%;
+}
+#favorite3 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin-right: 2%;
+}
+
+#favoriteImg {
+    width: 200px;
+    height: 200px;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
