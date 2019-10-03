@@ -154,6 +154,12 @@ a.article:hover {
     transition: all 0.3s;
 }
 
+table, th, td {
+  border: 3px solid #103e61;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px 80px;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
