@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Pagamentos</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/estilo-home.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="img/logo.png">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="Home.html">Home</a>
+                    <a href="Prestadores.html">Prestadores</a>
+                    <a href="Servicos.html">Serviços</a>
+                    <a href="Avaliacoes.html">Avaliações</a>
+                    <a href="Pagamentos.html">Pagamentos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </div>
+                </div>
+            </nav>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="description" content="">
+            <meta name="author" content="">
+            <link rel="icon" href="https://getbootstrap.com.br/favicon.ico">
+            <link href="./Exemplo de formulário para checkout usando Bootstrap_files/form-validation.css" rel="stylesheet">
+          </head>
+        
+          <body class="bg-light" cz-shortcut-listen="true">
+        
+            <div class="container">
+              <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="img/list.jpg" alt="" width="72" height="72">
+                <h3>Solicitação de Novo Serviço</h3>
+              </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                        <label for="prestador">Prestador de Serviço</label>
+                        <select class="custom-select d-block w-100" id="prestador" required="">
+                          <option value="">Escolha...</option>
+                          <option>José Limpezas LTDA</option>
+                          <option>Limpeza e tapecaria Maria</option>
+                          <option>San Peter Estofados</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um prestador válido.
+                        </div>
+                </div>
+                <div class="col-md-8 order-md-1">
+                  <h4 class="mb-3">Endereço do Serviço</h4>
+                  <form class="needs-validation" novalidate="">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="primeiroNome">Nome</label>
+                        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          É obrigatório inserir um nome válido.
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          É obrigatório inserir um sobre nome válido.
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="mb-3">
+                      <label for="nickname">Nickname</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="nickname" placeholder="Nickname" required="">
+                        <div class="invalid-feedback" style="width: 100%;">
+                          Seu nickname é obrigatório.
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="mb-3">
+                      <label for="email">Email <span class="text-muted">(Opcional)</span></label>
+                      <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
+                      <div class="invalid-feedback">
+                        Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+                      </div>
+                    </div>
+        
+                    <div class="mb-3">
+                      <label for="endereco">Endereço</label>
+                      <input type="text" class="form-control" id="endereco" placeholder="Rua" required="">
+                      <div class="invalid-feedback">
+                        Por favor, insira seu endereço de entrega.
+                      </div>
+                    </div>
+        
+                    <div class="mb-3">
+                      <label for="endereco2">Endereço 2 <span class="text-muted">(Opcional)</span></label>
+                      <input type="text" class="form-control" id="endereco2" placeholder="Apartamento ou casa">
+                    </div>
+        
+                    <div class="row">
+                      <div class="col-md-5 mb-3">
+                        <label for="pais">País</label>
+                        <select class="custom-select d-block w-100" id="pais" required="">
+                          <option value="">Escolha...</option>
+                          <option>Brasil</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Por favor, escolha um país válido.
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="estado">Estado</label>
+                        <select class="custom-select d-block w-100" id="estado" required="">
+                          <option value="">Escolha...</option>
+                          <option>São Paulo</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Por favor, insira um estado válido.
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep" placeholder="" required="">
+                        <div class="invalid-feedback">
+                          É obrigatório inserir um CEP.
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="mb-4">
+                    <a href="Servicos.html"><button class="btn btn-primary btn-lg btn-block" type="submit">Concluir Solicitação</button>
+                    </a>
+                  </form>
+                </div>
+              </div>
+        
+            </div>
+            <script src="./Exemplo de formulário para checkout usando Bootstrap_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+            <script src="./Exemplo de formulário para checkout usando Bootstrap_files/popper.min.js.download"></script>
+            <script src="./Exemplo de formulário para checkout usando Bootstrap_files/bootstrap.min.js.download"></script>
+            <script src="./Exemplo de formulário para checkout usando Bootstrap_files/holder.min.js.download"></script>
+            <script>
+              // Exemplo de JavaScript para desativar o envio do formulário, se tiver algum campo inválido.
+              (function() {
+                'use strict';
+        
+                window.addEventListener('load', function() {
+                  // Selecione todos os campos que nós queremos aplicar estilos Bootstrap de validação customizados.
+                  var forms = document.getElementsByClassName('needs-validation');
+        
+                  // Faz um loop neles e previne envio
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+            </script>
+          
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
