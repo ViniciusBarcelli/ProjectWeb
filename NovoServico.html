@@ -72,7 +72,7 @@
               </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                        <label for="prestador">Prestador de Serviço</label>
+                        <h4 for="prestador">Prestador de Serviço</h4>
                         <select class="custom-select d-block w-100" id="prestador" required="">
                           <option value="">Escolha...</option>
                           <option>José Limpezas LTDA</option>
@@ -80,7 +80,7 @@
                           <option>San Peter Estofados</option>
                         </select>
                         <div class="invalid-feedback">
-                          Por favor, escolha um prestador válido.
+                          Por favor, escolha um prestador.
                         </div>
                 </div>
                 <div class="col-md-8 order-md-1">
@@ -91,14 +91,14 @@
                         <label for="primeiroNome">Nome</label>
                         <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
                         <div class="invalid-feedback">
-                          É obrigatório inserir um nome válido.
+                          É obrigatório inserir um nome.
                         </div>
                       </div>
                       <div class="col-md-6 mb-3">
                         <label for="sobrenome">Sobrenome</label>
                         <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required="">
                         <div class="invalid-feedback">
-                          É obrigatório inserir um sobre nome válido.
+                          É obrigatório inserir um sobrenome.
                         </div>
                       </div>
                     </div>
@@ -107,7 +107,7 @@
                       <label for="email">Email <span class="text-muted">(Opcional)</span></label>
                       <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
                       <div class="invalid-feedback">
-                        Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+                        Por favor, insira um endereço de e-mail válido, para atualizações.
                       </div>
                     </div>
         
@@ -115,11 +115,33 @@
                       <label for="endereco">Endereço</label>
                       <input type="text" class="form-control" id="endereco" placeholder="Rua" required="">
                       <div class="invalid-feedback">
-                        Por favor, insira seu endereço de entrega.
+                        Por favor, insira seu endereço.
+                      </div>
+                      <input type="text" class="form-control" id="endereco" placeholder="Numero" required="">
+                      <div class="invalid-feedback">
+                        Por favor, insira seu endereço.
+                      </div>
+                      <input type="text" class="form-control" id="endereco" placeholder="Complemento" required="">
+                      <div class="invalid-feedback">
+                        Por favor, insira seu endereço.
+                      </div>
+                      <input type="text" class="form-control" id="endereco" placeholder="Bairro" required="">
+                      <div class="invalid-feedback">
+                        Por favor, insira seu endereço.
                       </div>
                     </div>
                     
                     <div class="row">
+                      <div class="col-md-4 mb-3">
+                          <label for="cidade">Cidade</label>
+                          <select class="custom-select d-block w-100" id="cidade" required="">
+                            <option value="">Escolha...</option>
+                            <option>São Paulo</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Por favor, insira uma cidade.
+                          </div>
+                      </div>
                       <div class="col-md-4 mb-3">
                         <label for="estado">Estado</label>
                         <select class="custom-select d-block w-100" id="estado" required="">
@@ -127,7 +149,7 @@
                           <option>São Paulo</option>
                         </select>
                         <div class="invalid-feedback">
-                          Por favor, insira um estado válido.
+                          Por favor, insira um estado.
                         </div>
                       </div>
                       <div class="col-md-3 mb-3">
@@ -138,6 +160,15 @@
                         </div>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect2">Selecione os serviços desejados</label>
+                      <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>Limpeza de Interiores</option>
+                        <option>Limpeza de Exteriores</option>
+                        <option>Limpeza de Estofados</option>
+                        <option>Limpeza de Carpetes</option>
+                      </select>
+                    </div>  
                     <hr class="mb-4">
                     <a href="Servicos.html"><button class="btn btn-primary btn-lg btn-block" type="submit">Concluir Solicitação</button>
                         </a>
