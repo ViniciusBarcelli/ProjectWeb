@@ -160,16 +160,25 @@
                         </div>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlSelect2">Selecione os serviços desejados</label>
-                      <select multiple class="form-control" id="exampleFormControlSelect2">
-                        <option>Limpeza de Interiores</option>
-                        <option>Limpeza de Exteriores</option>
-                        <option>Limpeza de Estofados</option>
-                        <option>Limpeza de Carpetes</option>
-                      </select>
-                    </div>  
+
                     <hr class="mb-4">
+                    <label for="formServices">Selecione os serviços desejados</label>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="interior">
+                      <label class="custom-control-label" for="interior">Limpeza de Interiores</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="exterior">
+                        <label class="custom-control-label" for="exterior">Limpeza de Exteriores</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="estofado">
+                        <label class="custom-control-label" for="estofado">Limpeza de Estofados</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="carpete">
+                        <label class="custom-control-label" for="carpete">Limpeza de Carpetes</label>
+                    </div>
                     <a href="Servicos.html"><button class="btn btn-primary btn-lg btn-block" type="submit">Concluir Solicitação</button>
                         </a>
                         </form>
