@@ -8,12 +8,11 @@
 
     <title>Home</title>
 
-    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/estilo-home.css">
-
-    <!-- Font Awesome JS -->
+    <script src="js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
@@ -42,127 +41,162 @@
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
                         <span>Menu</span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </div>
+                    <div class="dropleft show">
+                        <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> Minha Conta
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="Index.html">Meus Dados</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Index.html">Logout</a>
+                        </div>
                     </div>
                 </div>
             </nav>
 
-            <h2>Ultimos 5 Serviços</h2>
-            
-            <table align="center">
-                <tr>
-                    <th>Data</th>
-                    <th>Prestador</th>
-                    <th>Serviço</th>
-                    <th>Valor(R$)</th>
-                    <th>Situação</th>
-                </tr>
-                <tr>
-                    <td>10/10/2019</td>
-                    <td>José Limpezas LTDA</td>
-                    <td>Limpeza de caixa d'água</td>
-                    <td>500,00</td>
-                    <td>Concluído</td>
-                </tr>
-                <tr>
-                    <td>27/05/2019</td>
-                    <td>Limpeza e tapecaria Maria</td>
-                    <td>Lavagem de tapetes</td>
-                    <td>250,00</td>
-                    <td>Concluído</td>
-                </tr>
-                <tr>
-                    <td>12/11/2018</td>
-                    <td>José Limpezas LTDA</td>
-                    <td>Limpeza de faixada</td>
-                    <td>800,00</td>
-                    <td>Concluído</td>
-                </tr>
-                <tr>
-                    <td>04/07/2018</td>
-                    <td>San Peter Estofados</td>
-                    <td>Lavagem de cadeiras</td>
-                    <td>300,00</td>
-                    <td>Concluído</td>
-                </tr>
-                <tr>
-                    <td>09/04/2018</td>
-                    <td>José Limpezas LTDA</td>
-                    <td>Limpeza de caixa d'água</td>
-                    <td>400,00</td>
-                    <td>Concluído</td>
-                </tr>                    
-            </table>
+            <p><strong><h1>Ultimos Serviços</h1></strong></p>
 
+            <div class="row align-items-start">
+                <p><strong><div class="col"><h3>Data</h3></div></strong></p>
+                <p><strong><div class="col"><h3>Prestador</h3></div></strong></p>
+                <p><strong><div class="col"><h3>Serviço</h3></div></strong></p>
+                <p><strong><div class="col"><h3>Valor(R$)</h3></div></strong></p>
+                <p><strong><div class="col"><h3>Situação</h3></div></strong></p>
+                <div class="w-100"></div>
+                <div class="col">10/10/2019</div>
+                <div class="col">José Limpezas LTDA</div>
+                <div class="col">Limpeza de caixa d'agua</div>
+                <div class="col">500,00</div>
+                <div class="col">Concluído</div>
+                <div class="w-100"></div>
+                <div class="col">27/05/2019</div>
+                <div class="col">Tapeçaria da Maria</div>
+                <div class="col">Lavagem de Tapetes</div>
+                <div class="col">250,00</div>
+                <div class="col">Concluído</div>
+                <div class="w-100"></div>
+                <div class="col">12/11/2018</div>
+                <div class="col">João Limpador LTDA</div>
+                <div class="col">Faxina</div>
+                <div class="col">800,00</div>
+                <div class="col">Concluído</div>
+                <div class="w-100"></div>
+                <div class="col">04/07/2018</div>
+                <div class="col">San Peter Estofados</div>
+                <div class="col">Lavagem de Cadeiras</div>
+                <div class="col">300,00</div>
+                <div class="col">Concluído</div>
+                <div class="w-100"></div>
+                <div class="col">09/04/2018</div>
+                <div class="col">Edson LTDA</div>
+                <div class="col">Limpeza de Calha</div>
+                <div class="col">150,00</div>
+                <div class="col">Concluído</div>
+            </div>
+            <div class="line"></div>
+
+            <p><strong><h3>Prestadores de Serviços Favoritos</h3></strong></p>
+
+            <div class="row align-items-start">
+                <div class="col"><img id="favoriteImg" src="img/limpeza1.jpeg"></div>
+                <div class="col"><img id="favoriteImg" src="img/limpeza2.jpeg"></div>
+                <div class="col"><img id="favoriteImg" src="img/limpeza3.jpeg"></div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <li>João Limpador LTDA</li>
+                </div>
+                <div class="col">
+                    <li>San Peter Estofados</li>
+                </div>
+                <div class="col">
+                    <li>Tapeçaria da Maria</li>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <li>São Paulo/SP</li>
+                </div>
+                <div class="col">
+                    <li>São Paulo/SP</li>
+                </div>
+                <div class="col">
+                    <li>Diadema/SP</li>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">
+                    <li>
+                        (11) 2233-2786
+                    </li>
+                </div>
+                <div class="col">
+                    <li>(11) 3555-2588</li>
+                </div>
+                <div class="col">
+                    <li>(11) 4258-4574</li>
+                </div>
+            </div>
 
             <div class="line"></div>
 
-            <h2>Prestadores Favoritos</h2>
-            <div id="favorite1">
-                <img id="favoriteImg" src="img/limpeza1.jpeg">
-                <ul>
-                    <li>
-                        José Limpezas LTDA
-                    </li>
-                    <li>
-                        Santo André/SP
-                    </li>
-                    <li>
-                        (11) 985-587-785
-                    </li>
-                </ul>
-            </div>
-            <div id="favorite2">
-                <img id="favoriteImg" src="img/limpeza2.jpeg">
-                <ul>
-                    <li>
-                        San Peter Estofados
-                    </li>
-                    <li>
-                        São Paulo/SP
-                    </li>
-                    <li>
-                        (11) 3555-2588
-                    </li>
-                </ul>
-            </div>
-            <div id="favorite3">
-                <img id="favoriteImg" src="img/limpeza3.jpeg">
-                <ul>
-                    <li>
-                        Limpeza e tapecaria Maria
-                    </li>
-                    <li>
-                        Diadema/SP
-                    </li>
-                    <li>
-                        (11) 4258-4574
-                    </li>
-                </ul>
-            </div>
-            
-    </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small teal pt-4">
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+                <!-- Footer Text -->
+                <div class="container-fluid text-center text-md-left">
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold">DECLARAÇÃO DA POSIÇÃO DO PRODUTO</h5>
+                            <p>
+                                Este produto é voltado à pessoas físicas e jurídicas que necessitam de profissionais qualificados para serviços de limpeza, desde simples serviços domésticos à serviços diários empresariais.
+                            </p>
+
+                        </div>
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+                        <div class="col-md-6 mb-md-0 mb-3">
+
+                            <h5 class="text-uppercase font-weight-bold">NÓS OFERECEMOS</h5>
+                            <p>Uma interação direta entre prestador de serviço e cliente, agilizando contratações e prezando sempre pela qualidade e confiabilidade de profissionais.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright text-center py-3">
+                    © 2019 Copyright Easy Clean
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#sidebarCollapse').on('click', function() {
+                    $('#sidebar').toggleClass('active');
+                });
             });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
